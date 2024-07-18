@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="bmember">
+        <column xsi:type="int" name="bid" padding="10" identity="true" nullable="false" comment="ID" />
+        <column xsi:type="varchar" name="bname" length="100" nullable="false" comment="NAME" />
+        <column xsi:type="varchar" name="baddress" length="100" nullable="false" comment="Address" />
+        <column xsi:type="int" name="bsalary" length="100" nullable="true" comment="Salary" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="bid" />
+        </constraint>
+    </table>
+</schema>

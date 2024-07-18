@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/etc/schema.xsd">
+    <table name="my_custom_table">
+        <column name="id" type="int" unsigned="true" auto_increment="true" primary_key="true" />
+        <column name="name" type="varchar" nullable="false" />
+        <column name= "salary" type="int" />
+        <column name="created_at" type="datetime" default="CURRENT_TIMESTAMP" />
+    </table>
+</schema>
